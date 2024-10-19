@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}.tit{
+    background-color: rgba(16, 83, 183, 0.795);
+    width: 40%;
+    height: 70px;
+    color: aliceblue;
+    border-radius:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.inpt ,.from,.to{
+    border: 3px solid rgba(16, 83, 183, 0.795);
+    border-radius: 10px;
+
+}
+.change{
+    background-color:rgba(16, 83, 183, 0.795) ;
+    border: 3px solid rgba(255, 252, 253, 0.884);
+    color: white;
+
+}
+.change:hover{
+    background-color: rgb(142, 192, 231);
+}
+label{
+    font-size: 30px;
+    color: rgb(24, 6, 90);
+    font-weight: bold;
+    
+}
+.bod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    z-index: 3
+}
+img{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 50%;
+    height:100vh;
+}
+.color{
+    background-color:rgb(171, 211, 244);
+    width: 100%;
+    height: 100vh;
+    opacity: 25%;
+    position: absolute;
+    z-index: 2;
+}
+
+.back{
+    position: relative;
+ 
+}
+@media (min-width:360px) and (max-width:744px){
+    label{
+        font-size: 18px;
+    }
+    .tit h1{
+        font-size: 22px;
+    }
+    .tit{
+        width: 50%;
+    }
+    .change{
+        margin-left: 25px;
+    }
+}
